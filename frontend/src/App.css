@@ -1,0 +1,297 @@
+/* App.css */
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338ca;
+  --bg-color: #F1F5F9;
+  --card-bg: #FFFFFF;
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --border: #E2E8F0;
+}body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: #6b7280;
+}
+
+.upload-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.upload-card button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-card button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.video-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.video-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.brand-icon {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+}
+
+.system-stats {
+  display: flex;
+  gap: 20px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hero Upload Section */
+.upload-hero {
+  background: var(--card-bg);
+  padding: 60px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px dashed #CBD5E1;
+  margin-bottom: 50px;
+  transition: border-color 0.2s;
+}
+
+.upload-hero:hover {
+  border-color: var(--primary);
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin: 10px 0;
+}
+
+.btn-upload {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s;
+}
+
+.btn-upload:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-upload:disabled {
+  background-color: #9CA3AF;
+  cursor: not-allowed;
+}
+
+.browse-label {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #F1F5F9;
+  color: var(--text-muted);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.browse-label:hover {
+  background-color: #E2E8F0;
+  color: var(--text-main);
+}
+
+/* Grid Layout */
+.section-title {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+}
+
+/* Task Cards */
+.task-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-box {
+  background-color: #F1F5F9;
+  padding: 12px;
+  border-radius: 10px;
+  color: #475569;
+}
+
+.file-name {
+  font-weight: 700;
+  color: var(--text-main);
+  font-size: 1.1rem;
+}
+
+.file-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Status Badges */
+.badge-queued {
+  background-color: #FFEDD5;
+  color: #C2410C;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.badge-processing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.processing-text {
+  text-align: right;
+}
+
+.processing-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.processing-sub {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.btn-download {
+  background-color: #D1FAE5;
+  color: #047857;
+  border: 1px solid #10B981;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.1s;
+}
+
+.btn-download:hover {
+  transform: translateY(-1px);
+}
+
+.error-msg {
+  color: #EF4444;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}

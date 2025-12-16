@@ -1,0 +1,11 @@
+node_modules/
+.env
+
+backend/uploads/
+backend/outputs/
+
+*.mp4
+*.webm
+*.mov
+*.avi
+
